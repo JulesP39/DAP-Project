@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Submit Locations</title>
 </head>
 <body>
-    <h1>Unnamed Niche Interest App</h1> <!--UNI App? UNI-fy App? mein gott...life is rough...--->
+    <h1>Location Suggestions and Submission</h1>
     <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--Links to other pages-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <li class="nav-item active">
@@ -29,31 +29,35 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-    </nav> <!---Navbar code mainly from bootstrap-->
+    </nav>
 
-    <div id="favorite-locations" class="container">
-        <h5>Your Favorite Locations</h5>
+    <div id="location submission" class="con-submission"> <!--Form code taken from W3Schools-->
+        <form>
+            <label for="locname">Location Name:</label><br>
+            <input type="text" id="locname" name="locname"><br>
+
+            <label for="ltags">Tags:</label><br>
+            <input type="text" id="ltags" name="ltags"><br>
+
+            <label for="rating">Rating (out of 10):</label><br>
+            <input type="number" id="rating" name="rating"><br> <!--Set Bounds/Limits on Inputs-->
+
+            <label for="descript">Review:</label><br>
+            <input type="text" id="descript" name="descript"><br>
+        </form> 
     </div>
 
-    <div id="user-interest-tags" class="container">
-        <h5>Interest Tags You Follow</h5>
-    </div>
+    <div id="event submission" class="con-submission">
+        <form>
+            <label for="eventname">Name/Title of Event:</label><br>
+            <input type="text" id="eventname" name="eventname"><br>
 
-    <div id="week-highlight" class="container">
-        <h5>This Week's Highlight</h5>
-        Vote <a href="#">here</a> for next week's highlight in 6<!--Implement JS for number--> days!
-    </div>
+            <label for="etags">Tags:</label><br>
+            <input type="text" id="etags" name="etags"><br>
 
-    <div id="recent-saved" class="container">
-        <h5>Last Saved Location (Visit Again?)</h5>
-        <img id="lastlocation" src="#" alt="Last saved location"/> <!--Implement JS for link on image-->
-    </div>
-
-    <div id="in-app-stats" class="container">
-        <!-- Fun stats about individual (only shows you) and all collective users -->
-        <h5>Most Visited Location This Week</h5>
-        <h5>Highest Rated Location This Week</h5>
-        <h5>Events Attended This Month</h5>
+            <label for="descript">Review:</label><br>
+            <input type="text" id="descript" name="descript"><br>
+        </form> 
     </div>
 </body>
 </html>

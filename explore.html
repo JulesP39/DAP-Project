@@ -6,6 +6,45 @@
     <title>Explore</title>
 </head>
 <body>
-    
+    <h1>Explore</h1>
+    <h3>Try searching with tags too!</h3> <!--Can search from any page with navbar, this page gives suggestions-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--Links to other pages-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="explore.html">Explore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendar.html">Event Calendar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="saved-locations.html">Bookmarks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="submit-location.html">Submit Location</a>
+            </li>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div id="suggested-locations" class="container">
+        <h5>Check Out These Places</h5>
+    </div>
+
+    <div id="suggested-events" class="container">
+        <h5>Events That May Interest You</h5>
+    </div>
+
+    <div id="user-tags" class="container">
+        <h5>Tags You Follow</h5>  <!--Tag ex: crafts, sports, outdoors, tv shows, tabletop games, certain groups-->
+    </div>
+
+    <div id="submit-location" class="container">
+        <h5>Submit a Location <a href="#">Here</a></h5> 
 </body>
 </html>

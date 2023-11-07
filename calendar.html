@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+</head>
+<link href="calender.css" rel="stylesheet">
+<body>
+    <h1>Calendar</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--Links to other pages-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="explore.html">Explore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendar.html">Event Calendar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="saved-locations.html">Bookmarks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="submit-location.html">Submit Location</a>
+            </li>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="month"> <!--Code from W3Schools-->
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+          <li>August<br><span style="font-size:18px">2021</span></li> <!--Add JS for Month-->
+        </ul>
+      </div>
+      
+      <ul class="weekdays">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+      </ul>
+      
+      <ul class="days">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        ...etc
+      </ul> 
+</body>
+</html>
