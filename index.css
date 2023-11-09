@@ -1,0 +1,32 @@
+.container{
+    border: thick double rgba(77, 4, 77, 0.525);
+    border-radius: 0.05rem 2rem/2.5rem;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    margin-bottom: 2rem;
+}
+
+nav div{
+    border: solid yellow;
+    padding: 0%;
+}
+
+nav div li {
+    border: solid aliceblue;
+    padding: 2rem;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 1.5rem;
+}
+
+nav div li a {
+    text-decoration: none;
+    color:violet;
+}
+
+nav form {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
